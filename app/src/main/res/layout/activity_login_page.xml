@@ -18,14 +18,14 @@
         android:textColor="@color/colorBlack"
         android:textSize="25dp"
         android:textStyle="bold" />
-    <android.support.v7.widget.CardView
+    <!--<android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         app:cardBackgroundColor="#000"
         app:cardCornerRadius="10dp"
         app:cardElevation="40dp">
-
+-->
     <EditText
         android:id="@+id/etLoginUsername"
         android:layout_width="match_parent"
@@ -38,14 +38,14 @@
         android:textColor="@color/colorBlack"
         android:inputType="textPersonName"
         android:padding="10dp" />
-    </android.support.v7.widget.CardView>
+  <!--  </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         app:cardBackgroundColor="#000"
         app:cardCornerRadius="10dp"
-        app:cardElevation="40dp">
+        app:cardElevation="40dp">-->
 
     <EditText
         android:id="@+id/etLoginPassword"
@@ -58,7 +58,7 @@
         android:inputType="textPassword"
         android:textColor="@color/colorBlack"
         android:padding="10dp" />
-    </android.support.v7.widget.CardView>
+  <!--  </android.support.v7.widget.CardView>-->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"

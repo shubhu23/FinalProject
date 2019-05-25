@@ -9,69 +9,98 @@
     android:background="@drawable/mast"
     tools:context=".MainActivity">
 
-    <TextView
+<!--
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="INSIDE EMBLAZONER"
-        android:textColor="@color/colorBlack"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="134dp"
-        android:layout_height="136dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:id="@+id/card_view"
         android:layout_gravity="center"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="95dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="480dp"
-        android:src="@drawable/logomain" />
+        app:cardBackgroundColor="@drawable/mast"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="70dp">
+-->
 
-    <Button
-        android:id="@+id/adminbtn"
-        android:layout_width="386dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="INSIDE EMBLAZONER"
+                android:textColor="@color/colorBlack"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="134dp"
+                android:layout_height="136dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="125dp"
+                android:layout_marginBottom="480dp"
+                android:src="@drawable/logomain" />
+        </LinearLayout>
+   <!-- </android.support.v7.widget.CardView>-->
+
+
+   <!-- <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="9dp"
-        android:gravity="center"
-        android:text="Admin Login"
-        android:background="@color/colorBlack"
-        android:textColor="@color/colorWhite"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@drawable/mast"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="70dp">-->
 
-    <Button
-        android:id="@+id/userbtn"
-        android:layout_width="386dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginEnd="9dp"
-        android:gravity="center"
-        android:text="User Login"
-        android:background="@color/colorBlack"
-        android:textColor="@color/colorWhite"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/adminbtn"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="9dp"
+            android:background="@color/colorBlack"
+            android:text="Admin Login"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-
+        <Button
+            android:id="@+id/userbtn"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="9dp"
+            android:background="@color/colorBlack"
+            android:gravity="center"
+            android:text="User Login"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+<!--
+    </android.support.v7.widget.CardView>-->
 </RelativeLayout>

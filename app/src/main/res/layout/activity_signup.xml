@@ -9,6 +9,13 @@
     android:orientation="vertical"
     android:padding="50dp"
     tools:context=".SignupActivity">
+ <!--   <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@drawable/mast"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="70dp">-->
 
     <TextView
         android:id="@+id/textView"
@@ -21,16 +28,22 @@
         android:textColor="@color/colorBlack"
         android:textSize="26sp"
         android:textStyle="bold" />
-
+ <!--   </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        app:cardBackgroundColor="#000"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="40dp">
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@drawable/mast"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="70dp">
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
 
-    <EditText
+        <EditText
         android:id="@+id/etFullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,15 +55,6 @@
         android:maxLength="20"
         android:inputType="textPersonName"
         android:padding="10dp" />
-
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        app:cardBackgroundColor="#000"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="40dp">
 
     <EditText
         android:id="@+id/etUsername"
@@ -64,14 +68,7 @@
         android:maxLength="20"
         android:inputType="textPersonName"
         android:padding="10dp" />
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        app:cardBackgroundColor="#000"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="40dp">
+
 
     <EditText
         android:id="@+id/etPassword"
@@ -85,14 +82,7 @@
         android:maxLength="15"
         android:inputType="textPassword"
         android:padding="10dp" />
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        app:cardBackgroundColor="#000"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="40dp">
+
 
     <EditText
         android:id="@+id/etConfirmPassword"
@@ -106,7 +96,7 @@
         android:digits="0123456789@abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:inputType="textPassword"
         android:padding="10dp" />
-    </android.support.v7.widget.CardView>
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
@@ -132,5 +122,6 @@
         android:background="#aaa"
         android:text="Log In"
         android:textColor="@color/colorBlack" />
-
+        </LinearLayout>
+  <!--  </android.support.v7.widget.CardView>-->
 </LinearLayout>

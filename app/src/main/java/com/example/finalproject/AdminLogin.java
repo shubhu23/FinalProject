@@ -36,15 +36,15 @@ public class AdminLogin extends AppCompatActivity {
 
                 }
 
-                if(e.getText().toString().equals("shub") && p.getText().toString().equals("23101997")){
+                if(e.getText().toString().equals("shub@gmail.com") && p.getText().toString().equals("23101997")){
                     overridePendingTransition(R.anim.fadein, R.anim.fade_out);
-                    Intent intent=new Intent(AdminLogin.this,FilterActivity.class);
-                    startActivity(intent);
                     Toast.makeText(AdminLogin.this, "Login successful....", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Toast.makeText( AdminLogin.this, "Username and Password doesn't match", Toast.LENGTH_SHORT ).show();
                 }
+                Intent intent=new Intent(AdminLogin.this,FilterActivity.class);
+                startActivity(intent);
             }
         });
     }
